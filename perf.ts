@@ -88,7 +88,12 @@ export function pickBaseline(metrics: DailyMetric[], saved?: Baseline | null): B
   return { date: metrics[0].date, score: metrics[0].score };
 }
 
-export function vsBaseline(score: number, baseline: Baseline | null): { delta: number; pct: number } | null {
+export interface BaselineDelta {
+  delta: number;
+  pct: number;
+}
+
+export function vsBaseline(score: number, baseline: Baseline | null): BaselineDelta | null {
   if (!baseline || baseline.score === 0) return baseline ? { delta: score - baseline.score, pct: 0 } : null;
   return { delta: score - baseline.score, pct: Math.round(((score - baseline.score) / baseline.score) * 100) };
 }
