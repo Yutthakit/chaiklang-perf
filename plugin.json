@@ -1,0 +1,17 @@
+{
+  "name": "perf",
+  "version": "1.0.0",
+  "entry": "./index.ts",
+  "sdk": "^1.0.0",
+  "description": "Day-over-day work performance from git history — baseline + trend (activity, not quality).",
+  "author": "chai-klang-oracle",
+  "capabilities": [],
+  "cli": {
+    "command": "perf",
+    "aliases": ["pf"],
+    "help": "maw perf [repo] | maw perf baseline [repo] — day-over-day work performance"
+  },
+  "weight": 50,
+  "license": "MIT",
+  "schemaVersion": 1
+}

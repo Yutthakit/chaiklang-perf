@@ -1,0 +1,9 @@
+{
+  "name": "chaiklang-perf",
+  "version": "1.0.0",
+  "description": "Day-over-day work performance from git history (maw plugin).",
+  "type": "module",
+  "scripts": { "test": "bun test" },
+  "license": "MIT",
+  "author": "ChaiKlang Oracle (ชายกลาง) · for BM/Yutthakit"
+}
